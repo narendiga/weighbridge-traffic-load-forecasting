@@ -9,9 +9,12 @@ from utils.visualization import forecast_chart
 
 MODEL_DIR = PROJECT_ROOT / "models"
 MODEL_PATHS = {
-    "Hybrid TCN-BiLSTM": MODEL_DIR / "hybrid.keras",
+    "Hybrid TCN-BiLSTM": MODEL_DIR / "tcn-bilstm.keras",
+    "Hybrid CNN-BiGRU": MODEL_DIR / "cnn-bigru.keras",
+    "CNN": MODEL_DIR / "cnn.keras",
     "TCN": MODEL_DIR / "tcn.keras",
     "BiLSTM": MODEL_DIR / "bilstm.keras",
+    "BiGRU": MODEL_DIR / "bigru.keras",
 }
 
 WINDOW_SIZE = 30
